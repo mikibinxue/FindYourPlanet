@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Create Your Own Planet</title>
+	<!--try to be responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- link to css -->
+	<link rel="stylesheet" type="text/css" href="project2/style.css">
+
+	<!-- link to p5 library -->
+	<script src="project2/libraries/p5.js" type="text/javascript"></script>
+
+	<script src="project2/libraries/p5.dom.js" type="text/javascript"></script>
+	<script src="project2/libraries/p5.sound.js" type="text/javascript"></script>
+
+	<script src="project2/sketch.js" type="text/javascript"></script>
+
+	<!-- link to google font -->
+<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+	
+</head>
+
+<html>
+
+<body>
+
+	<div id="walkThrough" align="center">
+		<p id="sentence1">How does your planet look like in another universe?</p>
+		<p id="sentence2">Tell me something about yourself, I promise I can find your own planet!</p>
+		<p id="sentence2">Try different length of text to find your favorite pattern</p>
+	</div>
+
+	<div id="textinput" align="center">
+
+		<textarea align="center" id="TextArea" placeholder="Tell me something,
+        e.g.  Miki is a korean fried-chicken fan(she loves garlic flavor *_* )">
+		</textarea>
+
+		<!--create the submit button within the div-->
+		<button id="submitButton" class="button" value="submit" onclick="analyze()">find the planet</button>
+	</div>
+
+	
+	<!--the canvas-->
+	<div id="cvs_div">
+
+	</div>
+
+</body>
+
+</html>
